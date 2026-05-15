@@ -1,4 +1,4 @@
-```package com.Parser.parser.api.controller;
+package com.Parser.parser.api.controller;
 
 import com.Parser.parser.application.service.Parser;
 import com.Parser.parser.infrastructure.CryptocurrencyEntity;
@@ -28,4 +28,4 @@ public class ParserController {
     public List<CryptocurrencyEntity> searchByName(@RequestParam String name) {
         return parser.findByName(name);
     }
-}```
+}
