@@ -24,8 +24,8 @@ public class ParserController {
         return parser.findAll();
     }
 
-    @GetMapping("/search")
-    public List<CryptocurrencyEntity> searchByName(@RequestParam String name) {
+    @GetMapping("/search/{name}")
+    public List<CryptocurrencyEntity> searchByName(@PathVariable String name) {
         return parser.findByName(name);
     }
 }

@@ -16,11 +16,8 @@ public class CryptocurrencyEntity {
 
     @Id
     private Long id;
-
     private String name;
-
     private String symbol;
-
     private String slug;
 
     @Column(name = "circulating_supply", precision = 30, scale = 8)
